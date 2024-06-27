@@ -23,16 +23,12 @@ document.getElementById('register-form').addEventListener('submit', function(eve
     if (password !== confirmPassword) {
         errorMessage.textContent = 'Las contraseñas no coinciden.';
         return;
-    }else {
-
-        alert("Registro completo. Redirigiendo a iniciar sesión...");
     }
 
-
-    console.log('Registro exitoso');
-    errorMessage.textContent = 'Registro exitoso';
+    // Registro completo, redirigir a inicio de sesión
+    alert("Registro completo. Redirigiendo a iniciar sesión...");
 
     setTimeout(function() {
-        window.location.href = 'Login.html';
+        window.location.href = '{% url "login." %}';  // Utiliza la ruta de Django para la página de inicio de sesión
     }, 2000); 
 });

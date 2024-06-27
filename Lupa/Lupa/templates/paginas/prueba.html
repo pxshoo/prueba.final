@@ -24,19 +24,17 @@
  <!-- PONER CUALES SON LOS OBJETIVOS Y COMO PENSAMOS AYUDAR A RESOLVER EL PROBLEMA -->
  <!--https://videogameschile.com/home/ -->
  
-  <nav class="opciones">
-    <a href="Login.html">Login</a>
-    <a href="Register.html">Registrar</a>
-    <a href="prueba.html">Inicio</a>
-    <a href="#juegos">Juegos</a>
-    <a href="../HTML/Nosotros.html">Sobre Nosotros</a>
-
-    
-  </nav>
+ <nav class="opciones">
+  <a href="Login.html">Login</a>
+  <a href="{% url 'Register.' %}">Registrar</a>
+  <a href="{% url 'prueba' %}">Inicio</a>
+  <a href="#juegos">Juegos</a>
+  <a href="{% url 'Nosotros' %}">Sobre Nosotros</a>
+</nav>
   
   <div id="container">
     <div class="toggle"></div>
-    <script src="../ASSETS/js/JavaScript.js"></script>
+    <script src="../static/js/JavaScript.js"></script>
   </div>
 
 
@@ -45,25 +43,25 @@
   <div class="Slider-box">
     <ul>
       <li>
-        <img src="../img/WLITM-newArt-2022logo.png" alt="">
+        <img src="../static/img/WLITM-newArt-2022logo.png" alt="">
         <div class="texto"></div>
       </li>
 
 
       <li>
-        <img src="../img/TS.avif" alt="">
+        <img src="../static/img/TS.avif" alt="">
         <div class="texto"></div>
       </li>
 
 
       <li>
-        <img src="../img/narita.avif" alt="">
+        <img src="../static/img/narita.avif" alt="">
         <div class="texto"></div>
       </li>
 
 
       <li>
-        <img src="../img/pixelNoir.jpg" alt="">
+        <img src="../static/img/pixelNoir.jpg" alt="">
         <div class="texto"></div>
       </li>
     </ul>
@@ -87,7 +85,7 @@
   <div class="container">
     <div class="game-card">
       <div class="card">
-        <img src="../img/WLITM-newArt-2022logo.png" alt="Juego 1">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1721170/header.jpg?t=1716728708" alt="Juego 1">
         <h2>What Lies in the Multiverse</h2>
         <p class = "texto2">Un impresionante juego de puzles y plataformas en mundos del revés. Cambia de dimensión con solo tocar un botón, resuelve acertijos de lógica que te quebrarán el coco y recorre los páramos del multiverso en una historia divertida y sombría donde cambia la realidad tal y como la conoces.</p>
         <p class="price">CLP$ 8.300</p>
@@ -98,7 +96,7 @@
 
 
       <div class="card">
-        <img src="../img/pixelNoir.jpg" alt="pixel noir">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/754320/header.jpg?t=1715129318" alt="pixel noir">
         <h2>Pixel Noir</h2>
         <p class="texto2" >Algo pasó esa noche en el hospital, algo que te costó tu carrera como detective de policía, tu cordura y la vida de tu compañero. Diez años después, tienes la oportunidad de arreglar las cosas. ¿Son las alucinaciones que te acosan una clave de lo que pasó esa fatídica noche?</p>
         <p class="price">CLP$ 8.300</p>

@@ -22,11 +22,11 @@
 
   <nav class="opciones">
     <a href="Login.html">Login</a>
-    <a href="Register.html">Registrar</a>
-    <a href="prueba.html">Inicio</a>
+    <a href="{% url 'Register.' %}">Registrar</a>
+    <a href="{% url 'prueba' %}">Inicio</a>
     <a href="#juegos">Juegos</a>
-    <a href="../HTML/Nosotros.html">Sobre Nosotros</a>
-  </nav>
+    <a href="{% url 'Nosotros' %}">Sobre Nosotros</a>
+</nav>
 
   <div class="loginp">
     <div class="wrapper">
@@ -56,9 +56,9 @@
 
         <button type="submit" class="btn">Registrar</button>
         <div class="register-link">
-          <p>¿Ya tienes cuenta? <a href="Login.html">Inicia sesión</a></p>
+          <p>¿Ya tienes cuenta? <a href="{% url 'login.' %}">Inicia sesión</a></p>
         </div>
-      </form>
+      </form>   
     </div>
   </div>
 

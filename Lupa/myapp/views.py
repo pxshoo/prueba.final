@@ -10,3 +10,6 @@ def prueba_view(request):
 
 def Nosotros_view(request):
     return render(request, 'paginas/Nosotros.html')
+
+def Register_view(request):
+    return render(request, 'paginas/Register.html')

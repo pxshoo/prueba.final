@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="../static/css/Style.css">
-    <link rel="icon" href="../img/image-modified.png">
+    <link rel="icon" href="../static/img/image-modified.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -24,7 +24,7 @@
 
     <nav class="opciones">
         <a href="Login.html">Login</a>
-        <a href="Register.html">Registrar</a>
+        <a href="{% url 'Register.' %}">Registrar</a>
         <a href="{% url 'prueba' %}">Inicio</a>
         <a href="#juegos">Juegos</a>
         <a href="{% url 'Nosotros' %}">Sobre Nosotros</a>
@@ -70,7 +70,7 @@
                     <li><a href="https://www.instagram.com/pxshoo/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 <div class="image-container">
-                    <img src="../img/image-modified.png" alt="about image" class="about__img">
+                    <img src="../static/img/image-modified.png" alt="about image" class="about__img">
                 </div>
             </div>
             <div class="footer-copyright">
