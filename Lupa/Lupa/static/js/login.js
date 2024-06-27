@@ -5,7 +5,7 @@ function redirectToPrueba() {
 
     if (username.trim() !== "" && password.trim() !== "") {
 
-        window.location.href = "/HTML/prueba.html";
+        window.location.href = "{% url 'prueba' %}";
     } else {
 
         alert("Por favor, completa todos los campos.");

@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="Style">
-  <link rel="icon" href="../img/image-modified.png">
+  <link rel="icon" href="../static/img/image-modified.png">
   <link rel="stylesheet" href="../static/css/Style.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <title>LuPa</title>
   <!--api-->
-  <script src="//code.tidio.co/ggbv6cs2x0wwh2zfshdfghaezrzd1xrb.js" async></script>
+
 </head>
 
 <body>
@@ -25,7 +25,7 @@
  <!--https://videogameschile.com/home/ -->
  
  <nav class="opciones">
-  <a href="Login.html">Login</a>
+  <a href="{% url 'login.' %}">Login</a>
   <a href="{% url 'Register.' %}">Registrar</a>
   <a href="{% url 'prueba' %}">Inicio</a>
   <a href="#juegos">Juegos</a>
@@ -89,6 +89,7 @@
         <h2>What Lies in the Multiverse</h2>
         <p class = "texto2">Un impresionante juego de puzles y plataformas en mundos del revés. Cambia de dimensión con solo tocar un botón, resuelve acertijos de lógica que te quebrarán el coco y recorre los páramos del multiverso en una historia divertida y sombría donde cambia la realidad tal y como la conoces.</p>
         <p class="price">CLP$ 8.300</p>
+        <button id="Carrito">Agregar Al Carrito</button>
         <a href="https://store.steampowered.com/app/1721170/What_Lies_in_the_Multiverse/"><button>Ver pagina de steam</button></a>
 
       </div>
@@ -214,7 +215,19 @@
         <a href="https://store.steampowered.com/app/2474170/Astral_Rot/"><button>Ver pagina de steam</button></a>
       </div>
       <!-- AGREGAR VIDEO GAMING SHOWCASE CHILE, Y PONER GIFS DE LOS JUEGOS, COMO TAMBIEN PONER EL GENERO DEL VIDEOJUEGO Y API DE STEAM CON LOS PRECIOS -->
-      
+
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/667da1cfeaf3bd8d4d151214/1i1dc056f';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+
       <!-- Agrega más tarjetas de juegos según sea necesario -->
     </div>
   </div>

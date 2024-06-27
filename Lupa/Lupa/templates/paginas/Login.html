@@ -2,16 +2,16 @@
 <html>
 
 <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="static/js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="Style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="../static/css/Style.css">
+    <link rel="stylesheet" href="{% static 'css/Style.css' %}">
     <link rel="icon" href="../static/img/image-modified.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -23,7 +23,7 @@
     </header>
 
     <nav class="opciones">
-        <a href="Login.html">Login</a>
+        <a href="{% url 'login.' %}">Login</a>
         <a href="{% url 'Register.' %}">Registrar</a>
         <a href="{% url 'prueba' %}">Inicio</a>
         <a href="#juegos">Juegos</a>
@@ -50,7 +50,7 @@
                 </div>
                   <button type="button" class="btn" onclick="redirectToPrueba()">Login</button>
                 <div class="Register-link">
-                    <p>¿No tienes cuenta? <a href="../HTML/Register.html">Regístrate</a></p>
+                    <p>¿No tienes cuenta? <a href="{% url 'Register.' %}">Regístrate</a></p>
                 </div>
                 
             </form>
@@ -59,7 +59,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
+    <script src="{% static 'js/login.js' %}"></script>
     <footer>
         <div class="footer-container">
             <p class="footer">Información de contacto</p>
