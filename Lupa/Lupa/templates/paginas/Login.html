@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     {% load static %}
     <meta charset="utf-8">
@@ -14,9 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/Style.css' %}">
     <link rel="icon" href="../static/img/image-modified.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
-
 <body>
     <header>
         <h2 id="titulo">LuPa</h2>
@@ -32,27 +29,25 @@
 
     <div class="loginp">
         <div class="wrapper">
-            <form id="login-form">
+            <form id="login-form" method="POST" >
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
                     <i class='bx bxs-user'></i>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
                     <i class='bx bxs-lock-alt'></i>
-                    
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">Remember me</label>
                     <a href="#">Forgot password</a>
                 </div>
-                  <button type="button" class="btn" onclick="redirectToPrueba()">Login</button>
+                <button type="button" class="btn" onclick="redirectToPrueba()">Login</button>
                 <div class="Register-link">
                     <p>¿No tienes cuenta? <a href="{% url 'Register.' %}">Regístrate</a></p>
                 </div>
-                
             </form>
         </div>
     </div>
@@ -78,6 +73,18 @@
             </div>
         </div>
     </footer>
-</body>
 
+    <script>
+        function redirectToPrueba() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username.trim() !== "" && password.trim() !== "") {
+                document.getElementById("login-form").submit(); // Envía el formulario si los campos están completos
+            } else {
+                alert("Por favor, completa todos los campos.");
+            }
+        }
+    </script>
+</body>
 </html>
